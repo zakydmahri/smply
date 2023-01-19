@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+  box-sizing: border-box;
+}
+
+
+
+body{
+  background-color: white;
+  min-height: 100vh;
+  
+}
+
+
+.container{
+  max-width: 800px;
+  margin: auto;
+  padding: 10px;
+  background-color: #b7dbd8;
+  border-radius: 20px;
+  margin-top: 140px;
+  width: 415px;
+  box-shadow: 0.1px 3px 30px 1.5px rgba(0, 0, 0, 0.5);
+}
+
+.txtb{
+  width: 100%;
+  border-bottom: 2px solid #000;
+  background: white;
+  padding: 10px;
+  outline: none;
+  font-size: 18px;
+}
+
+h3{
+  margin: 10px 0;
+}
+
+.task{
+  width: 100%;
+  background: rgba(0,0,0,.5);
+  color: white;
+  padding: 18px;
+  margin: 6px 0;
+  overflow: hidden;
+}
+
+.task i{
+  float: right;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.comp .task{
+  background: white;
+  color: black;
+}
+
+/*sidebar*/
+    
+*{
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  }
+  body{
+  box-sizing: border-box;
+  }
+  .sidebar{
+  position: fixed;
+  background: #d1e8e0;
+  width: 200px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+   }
+  
+  .sidebar h1{
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 15px;
+  background: #d1e8e0;
+  
+  }
+  
+  .sidebar ul li{
+  margin: 25px 0;
+  
+  }
+  
+  .sidebar ul li a{
+  color: black;
+  padding: 0 30px;    
+  line-height: 57px;
+  }
+  
+  
+  .content{
+  margin-left: 210px ;
+  }

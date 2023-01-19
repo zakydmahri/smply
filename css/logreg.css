@@ -1,0 +1,375 @@
+ /*sidebar*/
+ @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Ubuntu:ital,wght@1,300&display=swap');
+        *{
+            box-sizing: border-box;
+        
+        
+        }
+        body{
+            margin: 0;
+            background: #121212;
+
+        }
+        button{
+            background: transparent;
+            border: 0;
+            padding: 0;
+            cursor: pointer;
+        }
+        .sidebar{
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            width: 75px;
+            height: 100%;
+            background: #B5D5C5;
+            transition: all 0.4s;
+        }
+
+        body.open .sidebar{
+            width: 240px;  
+        }
+
+        .sidebar-inner{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+        }
+
+        .sidebar-header{
+            display: flex;
+            align-items: center;
+            height: 68px;
+            padding: 0 1.25rem 0 0;
+            background: rgba(0, 0, 0, 0.1);
+            border-left: 3px solid transparent;
+            transition: all 0.4s;
+
+        }
+
+        .sidebar-header:hover{
+            border-left: 3px solid whitesmoke;
+        }
+
+        .sidebar-burger{
+            width: 70px;
+            height: 70px;
+            display: grid;
+            place-items: center;
+        }
+
+        .sidebar-burger > i,b body.open .sidebar-burger > i{
+            font-size: 25px;
+            color: #f9f9f9;
+            transition: all 0.4s;
+        }
+
+        .sidebar-burger:hover > i, body.open .sidebar-burger:hover > i{
+            color: #bdbdbd;
+
+        }
+
+        .sidebar-logo{
+            height: 30px;
+            opacity: 0;
+            transition: all 0.4s;
+
+        }
+
+        body.open .sidebar-logo{
+            opacity: 1;
+            transition: all 0.4s;
+
+        }
+        
+        .sidebar-menu{
+            display: grid;
+
+        }
+
+        .sidebar-menu > button{
+            display: flex;
+            gap: 12px;
+            align-items: center;
+            height: 55px;
+            font-family: "Open Sans";
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            line-height: 1;
+            padding: 0 22px;
+        }
+
+        .sidebar-menu > button:hover{
+            border-left: 3px solid #f9f9f9;
+
+        }
+
+        .sidebar-menu > button.has-border{
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+            margin-bottom: 1rem;
+
+        }
+
+        .sidebar-menu > button > i{
+            font-size: 25px;
+            color: #f9f9f9;
+            transition: all 0.4s;
+
+        } 
+
+        .sidebar-menu > button:hover > i, .sidebar-menu > button:hover > span{
+            color: #bdbdbd;
+        }
+
+        .sidebar-menu > button > span{
+            color: #f9f9f9;
+            opacity: 1;
+            transition: all 0.4s;
+        }
+
+        body.open .sidebar-menu > button > span{
+            opacity: 1;
+            transition: all 0.4s;
+
+        }
+
+/*login*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+padding: 0;
+margin: 0; 
+font-family: 'Open Sans', sans-serif;
+background: whitesmoke;
+padding: 40px;
+}
+
+.container{
+min-height: calc(100vh - 40px * 2);
+display: grid;
+grid-template-columns: 20% 50%;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.login-right{
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-left: 50px;
+background-color: white;
+
+}
+
+.login-left{
+background-color: #D1E8E0;
+font-family: 'Nanum Gothic', sans-serif;
+display: absolute;
+justify-content: center;
+padding: 50px;
+text-align: center;
+font-size: 10px;  
+}
+.login-left h1{
+    margin-top: 200px;
+    font-size: 35px;
+}
+.container-logo{
+        height: 30px;
+        opacity: 1;
+        transition: all 0.4s;
+        margin-left: 450px;
+        margin-top: -30px;
+    }
+.login-header h1{
+    font-weight: bold;
+    font-size: 40px;
+     
+}
+.login-form{
+width: 450px;
+
+}
+.login-form .form-item{
+    margin-top: 15px;
+}
+.login-form .form-item label{
+    margin-bottom: 15px;
+}
+
+.login-form content{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+ 
+input[type='text'],
+input[type='password']{
+border: 1px ;
+height: 38px;
+padding: 0 2rem;
+width: 100%;
+outline: none;
+font-size: 15px;
+border-radius: 10px;
+background-color: #F7F6F2;
+}
+
+input[type='checkbox']{
+width: 20px;
+height: 20px;
+accent-color: blue;
+}
+
+button{
+font-weight: bold;
+background:#D1E8E0;
+color: white;
+border-color: #D1E8E0;
+border-radius: 10px ;
+text-align: center;
+font-size: 18px;
+height: 40px;
+
+ 
+}
+
+/*Register*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+padding: 0;
+margin: 0;
+font-family: 'Open Sans', sans-serif;
+background: whitesmoke;
+padding: 40px;
+}
+
+.container{
+min-height: calc(100vh - 40px * 2);
+display: grid;
+grid-template-columns: 50% 50%;
+border-radius: 10px;
+overflow: hidden;
+}
+
+.register-right{
+display: flex;
+flex-direction: column;
+justify-content: center;
+padding-left: 50px;
+background-color: white;
+}
+
+.register-left{
+background-color: #D1E8E0;
+font-family: 'Nanum Gothic', sans-serif;
+display: absolute;
+justify-content: center;
+padding: 50px;
+text-align: center;
+font-size: 10px;  
+}
+
+.register-left > h1{
+font-size: 35px;
+}
+
+.cont-logo{
+        height: 30px;
+        opacity: 1;
+        transition: all 0.4s;
+        margin-left: 450px;
+        margin-top: -30px;
+    }
+
+    body.open .cont-logo{
+        opacity: 1;
+        transition: all 0.4s;
+    }
+
+.register-header{
+margin-bottom: 50px;
+}
+
+.register-header > h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.register-header > p{
+    opacity: .7;
+}
+
+.register-form{
+width: 450px;
+}
+.register-form > content{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.register-form > footer{
+    display: flex;
+    gap: 30px;
+    margin-top: 70px;
+}
+
+.register-form > footer > a{
+    flex: 6;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: .6rem;
+    justify-content: center;
+    display: flex;
+    color: black;
+    text-decoration:none;
+}
+.register-form > footer > a > :hover{
+    background-color: #eee;
+}
+
+.form-item  label:not(.checkboxLabel){
+ display: inline-block;
+ margin-bottom: 10px;   
+ transform: translate(30px, 10px);
+ font-size: 20px;
+}
+
+input[type='email'],
+input[type='username'],
+input[type='password']{
+border: 1px ;
+height: 38px;
+padding: 0 2rem;
+width: 100%;
+outline: none;
+ 
+font-size: 15px;
+border-radius: 10px;
+background-color: #F7F6F2;
+}
+
+button{
+font-weight: bold;
+background: #D1E8E0;
+color: white;
+border-color: #B5D5C5;
+border-radius: 10px ;
+text-align: center;
+font-size: 18px;
+height: 40px;
+width: 70px;
+}
+
